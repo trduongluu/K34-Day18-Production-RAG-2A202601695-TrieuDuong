@@ -7,8 +7,13 @@ Chạy: python check_lab.py
 
 import json
 import os
+import re
 import sys
 import subprocess
+
+# Import config ngay tu dau: config ep stdout/stderr ve UTF-8, neu khong
+# cac print co emoji ben duoi se nem UnicodeEncodeError tren console Windows.
+import config  # noqa: F401
 
 
 def check_file(path: str, required: bool = True) -> bool:
@@ -56,19 +61,21 @@ def run_tests() -> tuple[int, int]:
     try:
         result = subprocess.run(
             [sys.executable, "-m", "pytest", "tests/", "-v", "--tb=no", "-q"],
-            capture_output=True, text=True, timeout=120,
+            capture_output=True, text=True, timeout=600,
         )
-        lines = result.stdout.strip().split("\n")
-        summary = lines[-1] if lines else ""
-        # Parse "X passed, Y failed" or "X passed"
+        # Dòng cuối của pytest không phải lúc nào cũng là dòng tóm tắt (pytest mới
+        # kết thúc bằng một dòng "====="), nên phải dò ngược tìm dòng có "passed"
+        # hoặc "failed" và bóc số bằng regex thay vì split(",").
         passed = total = 0
-        for part in summary.split(","):
-            part = part.strip()
-            if "passed" in part:
-                passed = int(part.split()[0])
-                total += passed
-            if "failed" in part:
-                total += int(part.split()[0])
+        for line in reversed(result.stdout.strip().split("\n")):
+            counts = dict(
+                (kind, int(n))
+                for n, kind in re.findall(r"(\d+) (passed|failed|error|errors)", line)
+            )
+            if counts:
+                passed = counts.get("passed", 0)
+                total = sum(counts.values())
+                break
         return passed, total
     except Exception as e:
         print(f"  ⚠️  pytest error: {e}")

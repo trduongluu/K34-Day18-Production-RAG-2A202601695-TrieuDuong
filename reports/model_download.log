@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 7331.03it/s]
+<string>:4: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+bge-m3 OK dim = 1024
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  61%|######1   | 241/393 [00:00<00:00, 2399.61it/s]Loading weights: 100%|##########| 393/393 [00:00<00:00, 2333.88it/s]
+reranker OK score = [0.6850862]

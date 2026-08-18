@@ -1,0 +1,10 @@
+[
+  {
+    "question": "q",
+    "answer": "a",
+    "contexts": [
+      "c"
+    ],
+    "ground_truth": "gt"
+  }
+]

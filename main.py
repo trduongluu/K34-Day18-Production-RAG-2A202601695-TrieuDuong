@@ -11,6 +11,10 @@ import json
 import os
 import time
 
+# Import config ngay tu dau: config ep stdout/stderr ve UTF-8, neu khong
+# cac print co emoji ben duoi se nem UnicodeEncodeError tren console Windows.
+import config  # noqa: F401
+
 
 def main():
     print("=" * 60)
@@ -36,7 +40,9 @@ def main():
     # Move reports to reports/
     for f in ["ragas_report.json", "naive_baseline_report.json"]:
         if os.path.exists(f):
-            os.rename(f, f"reports/{f}")
+            # os.rename nem FileExistsError tren Windows khi dich da ton tai
+            # (lan chay thu 2 tro di). os.replace ghi de nguyen tu tren moi OS.
+            os.replace(f, f"reports/{f}")
 
     # Step 3: Comparison
     print("\n📌 STEP 3: Comparison")

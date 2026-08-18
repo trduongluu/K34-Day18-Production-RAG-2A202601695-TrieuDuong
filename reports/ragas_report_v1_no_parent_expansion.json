@@ -1,0 +1,171 @@
+{
+  "aggregate": {
+    "faithfulness": 0.6333,
+    "answer_relevancy": 0.6095,
+    "context_precision": 0.6792,
+    "context_recall": 0.6917
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Theo chính sách hiện hành (v2.0), mật khẩu phải được thay đổi mỗi 120 ngày. Chính sách cũ yêu cầu 90 ngày nhưng đã bị thay thế.",
+      "avg_score": 0.0,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Thời hạn thanh toán là 15 ngày. Quá hạn 5 ngày, bị tính phí 2%/tháng trên 15.000.000 VNĐ = 300.000 VNĐ/tháng (tính pro-rata khoảng 50.000 VNĐ cho 5 ngày).",
+      "avg_score": 0.0,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Lương thử việc của nhân viên Junior mức cao nhất là bao nhiêu?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Junior cao nhất là 20.000.000 VNĐ/tháng. Lương thử việc = 85% x 20.000.000 = 17.000.000 VNĐ/tháng.",
+      "avg_score": 0.125,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.5
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Theo chính sách hiện hành (v2024), nhân viên được nghỉ 15 ngày phép năm có lương. Chính sách cũ (v2023) là 12 ngày nhưng đã bị thay thế.",
+      "avg_score": 0.2083,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.3333,
+        "context_recall": 0.5
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Đơn hàng trên 50.000.000 VNĐ cần Tổng Giám đốc (CEO) phê duyệt.",
+      "avg_score": 0.25,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0,
+        "context_recall": 0.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "answer": "Không tìm thấy.",
+      "ground_truth": "Theo chính sách v2024: 15 ngày cơ bản + 3 ngày thâm niên (9÷3=3) = 18 ngày phép. Lương Senior (P3-P4): 20-35 triệu VNĐ/tháng.",
+      "avg_score": 0.375,
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0,
+        "context_recall": 0.5
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
+      "answer": "Phê duyệt cần từ Giám đốc phòng ban và cần xác nhận của phòng CNTT về cấu hình kỹ thuật trước khi đề xuất.",
+      "ground_truth": "Laptop 30 triệu nằm trong khoảng 5-50 triệu nên cần Giám đốc phòng ban (Director) phê duyệt. Ngoài ra, mua sắm thiết bị CNTT cần có xác nhận cấu hình kỹ thuật từ phòng CNTT trước khi đề xuất. Cần đính kèm ít nhất 3 báo giá vì trên 10 triệu.",
+      "avg_score": 0.6264,
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7556,
+        "context_precision": 0.5833,
+        "context_recall": 0.6667
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Phụ cấp ăn trưa hàng tháng là bao nhiêu?",
+      "answer": "Phụ cấp ăn trưa hàng tháng là 1.000.000 VNĐ/tháng.",
+      "ground_truth": "Phụ cấp ăn trưa là 1.000.000 VNĐ/tháng, chi trả cùng kỳ lương.",
+      "avg_score": 0.7872,
+      "worst_metric": "context_precision",
+      "score": 0.3333,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8156,
+        "context_precision": 0.3333,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Too many irrelevant chunks — context bị nhiễu, đáp án bị chôn",
+      "suggested_fix": "Thêm reranking cross-encoder hoặc metadata filter theo version/category"
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?",
+      "answer": "Nhân viên được nghỉ 3 ngày làm việc khi kết hôn.",
+      "ground_truth": "Nhân viên được nghỉ 3 ngày làm việc có lương khi kết hôn, không trừ vào phép năm.",
+      "avg_score": 0.7988,
+      "worst_metric": "context_precision",
+      "score": 0.3333,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8619,
+        "context_precision": 0.3333,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Too many irrelevant chunks — context bị nhiễu, đáp án bị chôn",
+      "suggested_fix": "Thêm reranking cross-encoder hoặc metadata filter theo version/category"
+    },
+    {
+      "question": "Thông tin lương thuộc cấp độ phân loại dữ liệu nào?",
+      "answer": "Thông tin lương thuộc cấp độ phân loại dữ liệu \"Bí mật\".",
+      "ground_truth": "Theo quy chế chi trả lương, thông tin lương được phân loại là dữ liệu Bí mật, cấm chia sẻ với đồng nghiệp. Theo chính sách phân loại dữ liệu, dữ liệu Bí mật (cấp 3) phải mã hóa khi truyền và hạn chế truy cập theo need-to-know.",
+      "avg_score": 0.7996,
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.865,
+        "context_precision": 0.8333,
+        "context_recall": 0.5
+      },
+      "diagnosis": "Missing relevant chunks — retrieval bỏ sót đoạn chứa đáp án",
+      "suggested_fix": "Cải thiện chunking (hierarchical/structure), thêm BM25, tăng top_k"
+    }
+  ]
+}

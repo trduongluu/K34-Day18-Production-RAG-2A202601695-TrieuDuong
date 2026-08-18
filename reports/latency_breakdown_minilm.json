@@ -1,0 +1,11 @@
+{
+  "bm25_ms": 1.7,
+  "dense_ms": 52.6,
+  "rrf_ms": 0.074,
+  "n_docs_reranked": 20,
+  "rerank": {
+    "avg_ms": 51.2,
+    "min_ms": 39.6,
+    "max_ms": 77.6
+  }
+}

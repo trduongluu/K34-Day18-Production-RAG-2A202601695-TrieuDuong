@@ -1,0 +1,122 @@
+Ignoring wrong pointing object 11 0 (offset 0)
+============================================================
+LAB 18: PRODUCTION RAG PIPELINE
+============================================================
+
+📌 STEP 1: Running Basic RAG Baseline...
+----------------------------------------
+============================================================
+BASIC RAG BASELINE
+(paragraph chunking + dense-only, no rerank, no enrichment)
+============================================================
+  ⚠️  Bỏ qua BCTC.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ⚠️  Bỏ qua Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  57 basic paragraph chunks
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 11099.80it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:21<01:03, 21.32s/it]Batches:  50%|█████     | 2/4 [00:32<00:30, 15.09s/it]Batches:  75%|███████▌  | 3/4 [00:40<00:12, 12.24s/it]Batches: 100%|██████████| 4/4 [00:44<00:00,  8.98s/it]Batches: 100%|██████████| 4/4 [00:44<00:00, 11.22s/it]
+  [1/20] Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?...
+  [2/20] Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhâ...
+  [3/20] Phụ cấp ăn trưa hàng tháng là bao nhiêu?...
+  [4/20] Nhân viên được nghỉ bao nhiêu ngày phép năm?...
+  [5/20] Thâm niên bao nhiêu năm thì được cộng thêm ngày ph...
+  [6/20] Mật khẩu phải có tối thiểu bao nhiêu ký tự?...
+  [7/20] Bao lâu phải đổi mật khẩu một lần?...
+  [8/20] Có cần kích hoạt xác thực đa yếu tố (MFA) không?...
+  [9/20] Nhân viên thử việc có được nghỉ phép năm không?...
+  [10/20] Khi phát hiện malware trên máy, nhân viên có nên t...
+  [11/20] Nhân viên thử việc có được hưởng bảo hiểm sức khỏe...
+  [12/20] Một nhân viên Senior có 9 năm thâm niên được nghỉ ...
+  [13/20] Nếu cần mua một chiếc laptop 30 triệu cho nhân viê...
+  [14/20] Nhân viên được tài trợ khóa học 25 triệu, nghỉ việ...
+  [15/20] Mentor và buddy của nhân viên mới có thể là cùng m...
+  [16/20] Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệ...
+  [17/20] Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh ...
+  [18/20] Lương thử việc của nhân viên Junior mức cao nhất l...
+  [19/20] Thông tin lương thuộc cấp độ phân loại dữ liệu nào...
+  [20/20] Nghỉ phép không lương 20 ngày cần ai phê duyệt?...
+Evaluating:   0%|          | 0/80 [00:00<?, ?it/s]Evaluating:   1%|▏         | 1/80 [00:03<05:01,  3.81s/it]Evaluating:   2%|▎         | 2/80 [00:06<04:04,  3.14s/it]Evaluating:  10%|█         | 8/80 [00:07<00:51,  1.40it/s]Evaluating:  12%|█▎        | 10/80 [00:08<00:39,  1.76it/s]Evaluating:  14%|█▍        | 11/80 [00:10<00:55,  1.25it/s]Evaluating:  15%|█▌        | 12/80 [00:11<01:01,  1.10it/s]Evaluating:  25%|██▌       | 20/80 [00:12<00:22,  2.64it/s]Evaluating:  26%|██▋       | 21/80 [00:14<00:29,  1.97it/s]Evaluating:  28%|██▊       | 22/80 [00:15<00:35,  1.65it/s]Evaluating:  38%|███▊      | 30/80 [00:16<00:15,  3.24it/s]Evaluating:  39%|███▉      | 31/80 [00:16<00:14,  3.39it/s]Evaluating:  40%|████      | 32/80 [00:18<00:22,  2.14it/s]Evaluating:  41%|████▏     | 33/80 [00:20<00:37,  1.26it/s]Evaluating:  54%|█████▍    | 43/80 [00:23<00:16,  2.22it/s]Evaluating:  55%|█████▌    | 44/80 [00:26<00:23,  1.52it/s]Evaluating:  65%|██████▌   | 52/80 [00:29<00:13,  2.02it/s]Evaluating:  66%|██████▋   | 53/80 [00:30<00:15,  1.74it/s]Evaluating:  79%|███████▉  | 63/80 [00:32<00:05,  2.99it/s]Evaluating:  82%|████████▎ | 66/80 [00:32<00:04,  3.41it/s]Evaluating:  84%|████████▍ | 67/80 [00:34<00:05,  2.25it/s]Evaluating:  85%|████████▌ | 68/80 [00:37<00:08,  1.34it/s]Evaluating:  94%|█████████▍| 75/80 [00:39<00:02,  2.17it/s]Evaluating:  99%|█████████▉| 79/80 [00:41<00:00,  2.11it/s]Evaluating: 100%|██████████| 80/80 [00:43<00:00,  1.58it/s]Evaluating: 100%|██████████| 80/80 [00:43<00:00,  1.84it/s]
+
+BASIC BASELINE SCORES
+  faithfulness: 0.8183
+  answer_relevancy: 0.6705
+  context_precision: 0.9250
+  context_recall: 0.9000
+Report saved to naive_baseline_report.json
+
+Done! Now implement advanced modules and run: python main.py
+
+📌 STEP 2: Running Production Pipeline...
+----------------------------------------
+============================================================
+PRODUCTION RAG PIPELINE
+============================================================
+
+[1/4] Chunking documents...
+Ignoring wrong pointing object 11 0 (offset 0)
+  ⚠️  Bỏ qua BCTC.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ⚠️  Bỏ qua Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ✓ 104 chunks from 26 documents (0.0s)
+
+[2/4] Enriching 104 chunks (M5, 1 API call/chunk)...
+  Enriched 10/104 chunks...
+  Enriched 20/104 chunks...
+  Enriched 30/104 chunks...
+  Enriched 40/104 chunks...
+  Enriched 50/104 chunks...
+  Enriched 60/104 chunks...
+  Enriched 70/104 chunks...
+  Enriched 80/104 chunks...
+  Enriched 90/104 chunks...
+  Enriched 100/104 chunks...
+  Enriched 104/104 chunks...
+  ✓ Enriched 104 chunks (276.7s)
+
+[3/4] Indexing 104 chunks (BM25 + Dense)...
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10308.07it/s]
+Batches:   0%|          | 0/7 [00:00<?, ?it/s]Batches:  14%|█▍        | 1/7 [00:11<01:06, 11.15s/it]Batches:  29%|██▊       | 2/7 [00:21<00:53, 10.61s/it]Batches:  43%|████▎     | 3/7 [00:28<00:36,  9.23s/it]Batches:  57%|█████▋    | 4/7 [00:36<00:25,  8.36s/it]Batches:  71%|███████▏  | 5/7 [00:42<00:15,  7.86s/it]Batches:  86%|████████▌ | 6/7 [00:49<00:07,  7.53s/it]Batches: 100%|██████████| 7/7 [00:52<00:00,  5.94s/it]Batches: 100%|██████████| 7/7 [00:52<00:00,  7.50s/it]
+  ✓ Indexed (61.3s)
+
+[4/4] Loading reranker...
+  ✓ Reranker ready (0.0s)
+
+[Eval] Running 20 queries...
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  31%|███       | 122/393 [00:00<00:00, 1207.92it/s]Loading weights:  62%|██████▏   | 243/393 [00:00<00:00, 997.15it/s] Loading weights:  88%|████████▊ | 345/393 [00:00<00:00, 1000.60it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 1036.68it/s]
+  [1/20] Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?...
+  [2/20] Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhâ...
+  [3/20] Phụ cấp ăn trưa hàng tháng là bao nhiêu?...
+  [4/20] Nhân viên được nghỉ bao nhiêu ngày phép năm?...
+  [5/20] Thâm niên bao nhiêu năm thì được cộng thêm ngày ph...
+  [6/20] Mật khẩu phải có tối thiểu bao nhiêu ký tự?...
+  [7/20] Bao lâu phải đổi mật khẩu một lần?...
+  [8/20] Có cần kích hoạt xác thực đa yếu tố (MFA) không?...
+  [9/20] Nhân viên thử việc có được nghỉ phép năm không?...
+  [10/20] Khi phát hiện malware trên máy, nhân viên có nên t...
+  [11/20] Nhân viên thử việc có được hưởng bảo hiểm sức khỏe...
+  [12/20] Một nhân viên Senior có 9 năm thâm niên được nghỉ ...
+  [13/20] Nếu cần mua một chiếc laptop 30 triệu cho nhân viê...
+  [14/20] Nhân viên được tài trợ khóa học 25 triệu, nghỉ việ...
+  [15/20] Mentor và buddy của nhân viên mới có thể là cùng m...
+  [16/20] Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệ...
+  [17/20] Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh ...
+  [18/20] Lương thử việc của nhân viên Junior mức cao nhất l...
+  [19/20] Thông tin lương thuộc cấp độ phân loại dữ liệu nào...
+  [20/20] Nghỉ phép không lương 20 ngày cần ai phê duyệt?...
+
+[Eval] Running RAGAS (4 metrics × 20 questions)...
+Evaluating:   0%|          | 0/80 [00:00<?, ?it/s]Evaluating:   1%|▏         | 1/80 [00:03<04:11,  3.18s/it]Evaluating:   2%|▎         | 2/80 [00:09<06:15,  4.81s/it]Evaluating:  10%|█         | 8/80 [00:10<01:10,  1.01it/s]Evaluating:  12%|█▎        | 10/80 [00:11<01:02,  1.12it/s]Evaluating:  22%|██▎       | 18/80 [00:11<00:21,  2.84it/s]Evaluating:  26%|██▋       | 21/80 [00:15<00:33,  1.74it/s]Evaluating:  29%|██▉       | 23/80 [00:15<00:27,  2.11it/s]Evaluating:  34%|███▍      | 27/80 [00:18<00:26,  1.99it/s]Evaluating:  36%|███▋      | 29/80 [00:19<00:27,  1.86it/s]Evaluating:  42%|████▎     | 34/80 [00:20<00:19,  2.32it/s]Evaluating:  46%|████▋     | 37/80 [00:22<00:18,  2.28it/s]Evaluating:  51%|█████▏    | 41/80 [00:24<00:19,  2.00it/s]Evaluating:  52%|█████▎    | 42/80 [00:26<00:23,  1.63it/s]Evaluating:  64%|██████▍   | 51/80 [00:26<00:07,  3.64it/s]Evaluating:  66%|██████▋   | 53/80 [00:30<00:14,  1.85it/s]Evaluating:  78%|███████▊  | 62/80 [00:31<00:06,  2.85it/s]Evaluating:  81%|████████▏ | 65/80 [00:32<00:05,  2.87it/s]Evaluating:  82%|████████▎ | 66/80 [00:34<00:06,  2.19it/s]Evaluating:  84%|████████▍ | 67/80 [00:37<00:09,  1.36it/s]Evaluating:  96%|█████████▋| 77/80 [00:38<00:01,  2.78it/s]Evaluating:  99%|█████████▉| 79/80 [00:39<00:00,  2.93it/s]Evaluating: 100%|██████████| 80/80 [00:40<00:00,  2.26it/s]Evaluating: 100%|██████████| 80/80 [00:40<00:00,  1.97it/s]
+  ✓ RAGAS done (44.5s)
+
+============================================================
+PRODUCTION RAG SCORES
+============================================================
+  ✓ faithfulness: 0.8375
+  ✓ answer_relevancy: 0.8356
+  ✓ context_precision: 0.9583
+  ✓ context_recall: 0.9333
+Report saved to ragas_report.json
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\Code Space\K34-Day18-Production-RAG-2A202601695-TrieuDuong\main.py", line 76, in <module>
+    main()
+  File "C:\Users\ADMIN\Desktop\Code Space\K34-Day18-Production-RAG-2A202601695-TrieuDuong\main.py", line 43, in main
+    os.rename(f, f"reports/{f}")
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'ragas_report.json' -> 'reports/ragas_report.json'

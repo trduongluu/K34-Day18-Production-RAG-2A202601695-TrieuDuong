@@ -1,0 +1,14 @@
+loading docs...
+Ignoring wrong pointing object 11 0 (offset 0)
+  ⚠️  Bỏ qua BCTC.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ⚠️  Bỏ qua Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf: PDF scan ảnh, không có text layer (cần OCR).
+104 chunks
+bm25 indexed
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 11203.76it/s]
+dense warm
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 225/393 [00:00<00:00, 2224.23it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 2177.60it/s]
+reranker warm
+bm25 4.5
+dense 324.6
+rrf 0.063
+{"bm25_ms": 4.5, "dense_ms": 324.6, "rrf_ms": 0.063, "n_docs_reranked": 20, "rerank": {"avg_ms": 11259.7, "min_ms": 10793.9, "max_ms": 12553.2}}

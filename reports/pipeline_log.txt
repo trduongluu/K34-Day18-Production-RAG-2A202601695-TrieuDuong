@@ -1,0 +1,192 @@
+============================================================
+PRODUCTION RAG PIPELINE
+============================================================
+
+[1/4] Chunking documents...
+Ignoring wrong pointing object 11 0 (offset 0)
+  ⚠️  Bỏ qua BCTC.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ⚠️  Bỏ qua Nghi_dinh_so_13-2023_ve_bao_ve_du_lieu_ca_nhan_508ee.pdf: PDF scan ảnh, không có text layer (cần OCR).
+  ✓ 104 chunks from 26 documents (0.2s)
+
+[2/4] Enriching 104 chunks (M5, 1 API call/chunk)...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 10/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 20/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 30/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 40/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 50/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 60/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 70/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 80/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 90/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 100/104 chunks...
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  ⚠️  OpenAI call failed: Connection error.
+  Enriched 104/104 chunks...
+  ✓ Enriched 104 chunks (337.2s)
+
+[3/4] Indexing 104 chunks (BM25 + Dense)...
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Retrying in 1s [Retry 1/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 2s [Retry 2/5].
+Retrying in 2s [Retry 2/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 4s [Retry 3/5].
+Retrying in 4s [Retry 3/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 8s [Retry 4/5].
+Retrying in 8s [Retry 4/5].
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+'[Errno 11001] getaddrinfo failed' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+Retrying in 8s [Retry 5/5].
+Retrying in 8s [Retry 5/5].
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2216.95it/s]
+Batches:   0%|          | 0/7 [00:00<?, ?it/s]Batches:  14%|█▍        | 1/7 [00:00<00:01,  3.48it/s]Batches:  29%|██▊       | 2/7 [00:00<00:01,  3.00it/s]Batches:  43%|████▎     | 3/7 [00:01<00:01,  2.60it/s]Batches:  57%|█████▋    | 4/7 [00:01<00:01,  2.65it/s]Batches:  71%|███████▏  | 5/7 [00:01<00:00,  2.91it/s]Batches:  86%|████████▌ | 6/7 [00:02<00:00,  2.94it/s]Batches: 100%|██████████| 7/7 [00:02<00:00,  3.65it/s]Batches: 100%|██████████| 7/7 [00:02<00:00,  3.15it/s]
+  ✓ Indexed (54.9s)
+
+[4/4] Loading reranker...
+  ✓ Reranker ready (0.0s)
+
+[Eval] Running 20 queries...
+Loading weights:   0%|          | 0/41 [00:00<?, ?it/s]Loading weights: 100%|██████████| 41/41 [00:00<00:00, 1858.01it/s]
+  [1/20] Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?...
+  [2/20] Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhâ...
+  [3/20] Phụ cấp ăn trưa hàng tháng là bao nhiêu?...
+  [4/20] Nhân viên được nghỉ bao nhiêu ngày phép năm?...
+  [5/20] Thâm niên bao nhiêu năm thì được cộng thêm ngày ph...
+  [6/20] Mật khẩu phải có tối thiểu bao nhiêu ký tự?...
+  [7/20] Bao lâu phải đổi mật khẩu một lần?...
+  [8/20] Có cần kích hoạt xác thực đa yếu tố (MFA) không?...
+  [9/20] Nhân viên thử việc có được nghỉ phép năm không?...
+  [10/20] Khi phát hiện malware trên máy, nhân viên có nên t...
+  [11/20] Nhân viên thử việc có được hưởng bảo hiểm sức khỏe...
+  [12/20] Một nhân viên Senior có 9 năm thâm niên được nghỉ ...
+  [13/20] Nếu cần mua một chiếc laptop 30 triệu cho nhân viê...
+  [14/20] Nhân viên được tài trợ khóa học 25 triệu, nghỉ việ...
+  [15/20] Mentor và buddy của nhân viên mới có thể là cùng m...
+  [16/20] Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệ...
+  [17/20] Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh ...
+  [18/20] Lương thử việc của nhân viên Junior mức cao nhất l...
+  [19/20] Thông tin lương thuộc cấp độ phân loại dữ liệu nào...
+  [20/20] Nghỉ phép không lương 20 ngày cần ai phê duyệt?...
+
+[Eval] Running RAGAS (4 metrics × 20 questions)...
+Evaluating:   0%|          | 0/80 [00:00<?, ?it/s]Evaluating:   1%|▏         | 1/80 [00:04<05:23,  4.09s/it]Evaluating:   2%|▎         | 2/80 [00:07<04:58,  3.83s/it]Evaluating:  15%|█▌        | 12/80 [00:09<00:36,  1.86it/s]Evaluating:  16%|█▋        | 13/80 [00:09<00:37,  1.79it/s]Evaluating:  18%|█▊        | 14/80 [00:11<00:48,  1.35it/s]Evaluating:  19%|█▉        | 15/80 [00:14<01:12,  1.11s/it]Evaluating:  28%|██▊       | 22/80 [00:16<00:32,  1.81it/s]Evaluating:  29%|██▉       | 23/80 [00:18<00:39,  1.44it/s]Evaluating:  32%|███▎      | 26/80 [00:19<00:30,  1.74it/s]Evaluating:  35%|███▌      | 28/80 [00:21<00:35,  1.47it/s]Evaluating:  36%|███▋      | 29/80 [00:22<00:40,  1.26it/s]Evaluating:  49%|████▉     | 39/80 [00:23<00:12,  3.29it/s]Evaluating:  50%|█████     | 40/80 [00:25<00:18,  2.17it/s]Evaluating:  51%|█████▏    | 41/80 [00:27<00:23,  1.66it/s]Evaluating:  60%|██████    | 48/80 [00:29<00:13,  2.31it/s]Evaluating:  62%|██████▎   | 50/80 [00:29<00:11,  2.68it/s]Evaluating:  64%|██████▍   | 51/80 [00:32<00:20,  1.39it/s]Evaluating:  65%|██████▌   | 52/80 [00:34<00:24,  1.14it/s]Evaluating:  74%|███████▍  | 59/80 [00:36<00:11,  1.84it/s]Evaluating:  78%|███████▊  | 62/80 [00:39<00:11,  1.55it/s]Evaluating:  79%|███████▉  | 63/80 [00:41<00:14,  1.20it/s]Evaluating:  89%|████████▉ | 71/80 [00:44<00:04,  1.82it/s]Evaluating:  96%|█████████▋| 77/80 [00:45<00:01,  2.41it/s]Evaluating:  98%|█████████▊| 78/80 [00:45<00:00,  2.51it/s]Evaluating:  99%|█████████▉| 79/80 [00:46<00:00,  2.62it/s]Evaluating: 100%|██████████| 80/80 [00:46<00:00,  2.52it/s]Evaluating: 100%|██████████| 80/80 [00:46<00:00,  1.72it/s]
+  ✓ RAGAS done (50.1s)
+
+============================================================
+PRODUCTION RAG SCORES
+============================================================
+  ✓ faithfulness: 0.8500
+  ✓ answer_relevancy: 0.7872
+  ✓ context_precision: 0.7992
+  ✓ context_recall: 0.9083
+Report saved to ragas_report.json
+
+Total: 491.4s

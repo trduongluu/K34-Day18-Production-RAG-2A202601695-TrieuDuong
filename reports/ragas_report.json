@@ -1,0 +1,171 @@
+{
+  "aggregate": {
+    "faithfulness": 0.8375,
+    "answer_relevancy": 0.8356,
+    "context_precision": 0.9583,
+    "context_recall": 0.9333
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "answer": "Nhân viên có 9 năm thâm niên sẽ được 18 ngày phép năm (15 ngày cơ bản + 3 ngày cộng thêm). Về lương, không có thông tin cụ thể trong context để xác định mức lương của nhân viên Senior.",
+      "ground_truth": "Theo chính sách v2024: 15 ngày cơ bản + 3 ngày thâm niên (9÷3=3) = 18 ngày phép. Lương Senior (P3-P4): 20-35 triệu VNĐ/tháng.",
+      "avg_score": 0.5417,
+      "worst_metric": "answer_relevancy",
+      "score": 0.0,
+      "metrics": {
+        "faithfulness": 0.6667,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0,
+        "context_recall": 0.5
+      },
+      "diagnosis": "Answer doesn't match question — trả lời lạc trọng tâm",
+      "suggested_fix": "Cải thiện prompt template, yêu cầu trả lời trực tiếp câu hỏi"
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "answer": "Nhân viên tạm ứng 15.000.000 VNĐ và thanh toán sau 20 ngày, tức là quá hạn 5 ngày. Phí phạt là 2%/tháng trên số tiền chưa hoàn ứng. \n\nTính phí phạt cho 5 ngày (1/6 tháng):\nPhí phạt = 15.000.000 VNĐ * 2% * (5/30) = 50.000 VNĐ.\n\nNhân viên sẽ bị phạt **50.000 VNĐ**.",
+      "ground_truth": "Thời hạn thanh toán là 15 ngày. Quá hạn 5 ngày, bị tính phí 2%/tháng trên 15.000.000 VNĐ = 300.000 VNĐ/tháng (tính pro-rata khoảng 50.000 VNĐ cho 5 ngày).",
+      "avg_score": 0.6834,
+      "worst_metric": "faithfulness",
+      "score": 0.25,
+      "metrics": {
+        "faithfulness": 0.25,
+        "answer_relevancy": 0.8169,
+        "context_precision": 1.0,
+        "context_recall": 0.6667
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Lương thử việc của nhân viên Junior mức cao nhất là bao nhiêu?",
+      "answer": "Lương thử việc của nhân viên Junior (mức cao nhất 20.000.000 VNĐ) là 17.000.000 VNĐ (85% của 20.000.000 VNĐ).",
+      "ground_truth": "Junior cao nhất là 20.000.000 VNĐ/tháng. Lương thử việc = 85% x 20.000.000 = 17.000.000 VNĐ/tháng.",
+      "avg_score": 0.7848,
+      "worst_metric": "faithfulness",
+      "score": 0.3333,
+      "metrics": {
+        "faithfulness": 0.3333,
+        "answer_relevancy": 0.8058,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Nghỉ phép không lương 20 ngày cần ai phê duyệt?",
+      "answer": "Nghỉ phép không lương 20 ngày cần phê duyệt của **Giám đốc điều hành (CEO)**.",
+      "ground_truth": "Nghỉ 16-30 ngày cần phê duyệt của Giám đốc điều hành (CEO). Lưu ý: nghỉ trên 14 ngày không lương, nhân viên phải tự đóng phần bảo hiểm của mình.",
+      "avg_score": 0.8312,
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.8248,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng hoàn thành khóa học. Phải hoàn trả bao nhiêu?",
+      "answer": "Nhân viên phải hoàn trả **100% chi phí** đào tạo đã được tài trợ, tức là **25.000.000 VNĐ**.",
+      "ground_truth": "Nhân viên phải cam kết làm việc ít nhất 1 năm sau khi hoàn thành khóa học. Nghỉ sau 8 tháng là trước hạn cam kết, phải hoàn trả 100% chi phí tức 25.000.000 VNĐ.",
+      "avg_score": 0.8509,
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9034,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "answer": "Có, tất cả nhân viên **bắt buộc** phải kích hoạt xác thực đa yếu tố (MFA) cho tài khoản email, VPN và các hệ thống nội bộ.",
+      "ground_truth": "Có, theo chính sách mật khẩu v2.0 hiện hành, tất cả nhân viên bắt buộc kích hoạt MFA cho email, VPN và hệ thống nội bộ. Chính sách cũ v1.0 không yêu cầu MFA.",
+      "avg_score": 0.8536,
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9144,
+        "context_precision": 1.0,
+        "context_recall": 0.5
+      },
+      "diagnosis": "Missing relevant chunks — retrieval bỏ sót đoạn chứa đáp án",
+      "suggested_fix": "Cải thiện chunking (hierarchical/structure), thêm BM25, tăng top_k"
+    },
+    {
+      "question": "Thâm niên bao nhiêu năm thì được cộng thêm ngày phép?",
+      "answer": "Nhân viên có thâm niên từ **3 năm trở lên** sẽ được cộng thêm **1 ngày phép** cho mỗi 3 năm làm việc liên tục theo chính sách nghỉ phép năm (phiên bản 2024).",
+      "ground_truth": "Theo chính sách v2024 hiện hành, nhân viên có thâm niên từ 3 năm trở lên được cộng thêm 1 ngày phép cho mỗi 3 năm. Chính sách cũ v2023 yêu cầu 5 năm.",
+      "avg_score": 0.8544,
+      "worst_metric": "context_precision",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9176,
+        "context_precision": 0.5,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Too many irrelevant chunks — context bị nhiễu, đáp án bị chôn",
+      "suggested_fix": "Thêm reranking cross-encoder hoặc metadata filter theo version/category"
+    },
+    {
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm sức khỏe PVI không?",
+      "answer": "Nhân viên thử việc không được hưởng gói bảo hiểm sức khỏe PVI. Họ chỉ được tham gia bảo hiểm xã hội bắt buộc.",
+      "ground_truth": "KHÔNG. Nhân viên thử việc chưa được hưởng gói bảo hiểm sức khỏe PVI. Chỉ được tham gia bảo hiểm xã hội bắt buộc.",
+      "avg_score": 0.8729,
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9917,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "diagnosis": "LLM hallucinating — câu trả lời chứa thông tin không có trong context",
+      "suggested_fix": "Siết prompt ('chỉ dùng context'), hạ temperature, buộc trích dẫn nguồn"
+    },
+    {
+      "question": "Phụ cấp ăn trưa hàng tháng là bao nhiêu?",
+      "answer": "Phụ cấp ăn trưa hàng tháng là **1.000.000 VNĐ/tháng**.",
+      "ground_truth": "Phụ cấp ăn trưa là 1.000.000 VNĐ/tháng, chi trả cùng kỳ lương.",
+      "avg_score": 0.9122,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8156,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8156,
+        "context_precision": 0.8333,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Answer doesn't match question — trả lời lạc trọng tâm",
+      "suggested_fix": "Cải thiện prompt template, yêu cầu trả lời trực tiếp câu hỏi"
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+      "answer": "Nhân viên chính thức được hưởng **15 ngày phép năm** có lương theo chính sách mới nhất (phiên bản 2024).",
+      "ground_truth": "Theo chính sách hiện hành (v2024), nhân viên được nghỉ 15 ngày phép năm có lương. Chính sách cũ (v2023) là 12 ngày nhưng đã bị thay thế.",
+      "avg_score": 0.9508,
+      "worst_metric": "answer_relevancy",
+      "score": 0.8031,
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8031,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "diagnosis": "Answer doesn't match question — trả lời lạc trọng tâm",
+      "suggested_fix": "Cải thiện prompt template, yêu cầu trả lời trực tiếp câu hỏi"
+    }
+  ]
+}

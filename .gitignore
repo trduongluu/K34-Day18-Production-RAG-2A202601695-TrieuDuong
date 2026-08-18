@@ -5,4 +5,11 @@ __pycache__/
 .pytest_cache/
 qdrant_data/
 *.egg-info/
-reports/*.json
+.venv/
+venv/
+
+# Reports là deliverable bắt buộc (RUBRIC #7) nên KHÔNG ignore:
+# reports/*.json
+
+.claude/
+.omc/
